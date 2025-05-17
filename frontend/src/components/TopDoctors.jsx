@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 
 const TopDoctors = () => {
-    
     const navigate = useNavigate()
     const { doctors } = useContext(AppContext)
 
@@ -24,11 +23,15 @@ const TopDoctors = () => {
                         key={index}
                         className='cursor-pointer border border-blue-200 bg-white rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-transform duration-300'
                     >
-                        <img
-                            className='w-full h-48 object-cover bg-blue-50'
-                            src={item.image}
-                            alt={item.name}
-                        />
+                        {/* Image container with fixed aspect ratio */}
+                        <div className="w-full aspect-w-4 aspect-h-3 bg-blue-50">
+                            <img
+                                className='w-full h-full object-cover'
+                                src={item.image}
+                                alt={item.name}
+                            />
+                        </div>
+
                         <div className='p-4 space-y-1'>
                             <div className='flex items-center gap-2 text-sm text-green-600 font-medium'>
                                 <span className='w-2 h-2 rounded-full bg-green-500'></span>
@@ -42,7 +45,7 @@ const TopDoctors = () => {
             </div>
 
             <button
-                onClick={() => { navigate('/doctors'); scrollTo(0, 0); }}
+                onClick={() => { navigate('/doctors'); window.scrollTo(0, 0); }}
                 className='bg-primary text-white px-10 py-3 rounded-full mt-10 hover:bg-indigo-600 transition'
             >
                 See More Doctors
