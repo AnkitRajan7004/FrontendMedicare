@@ -3,8 +3,7 @@ import { assets } from '../assets/assets'
 
 const About = () => {
   return (
-    <div className="px-6 md:px-20 lg:px-32 py-12 bg-blue-50 min-h-screen">
-
+    <div className="max-w-screen-lg mx-auto px-6 md:px-10 py-12 bg-blue-50 min-h-screen">
       {/* Title */}
       <div className="text-center text-4xl pt-10 font-extrabold tracking-wide text-blue-900 animate-slideInLeft">
         ABOUT <span className="text-blue-600">MEDICARE INDIA</span>
@@ -17,7 +16,7 @@ const About = () => {
           src={assets.about_image}
           alt="Medicare India Healthcare"
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-base sm:text-lg text-blue-800 leading-relaxed">
+        <div className="flex flex-col justify-center gap-6 w-full md:w-2/4 text-base sm:text-lg text-blue-800 leading-relaxed">
           <p>
             Welcome to <b>Medicare India</b>, your reliable healthcare partner dedicated to simplifying your medical journey across India. From booking appointments with trusted doctors to managing your health records digitally, we bring healthcare to your fingertips.
           </p>
@@ -35,7 +34,7 @@ const About = () => {
       <div className="text-3xl my-8 font-bold text-blue-800 animate-slideInLeft">
         WHY <span className="text-blue-600">CHOOSE US</span>
       </div>
-      <div className="flex flex-col md:flex-row gap-10 mb-24">
+      <div className="flex flex-col lg:flex-row gap-10 mb-24">
         {[
           {
             title: "EFFICIENCY",

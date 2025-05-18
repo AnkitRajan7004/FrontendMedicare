@@ -3,16 +3,15 @@ import { assets } from '../assets/assets';
 
 const Contact = () => {
   return (
-    <div className="bg-blue-50 min-h-screen py-14 px-6 sm:px-10 md:px-20 lg:px-32">
-
+    <div className="min-h-screen flex flex-col items-center justify-start pt-20 pb-32 px-4 sm:px-10 md:px-20 lg:px-32">
       {/* Heading */}
       <div className="text-center text-3xl sm:text-4xl font-bold text-blue-900 mb-10">
         CONTACT <span className="text-blue-600">US</span>
       </div>
 
-      {/* Flex Container */}
-      <div className="flex flex-col md:flex-row items-center gap-10">
-
+      {/* Contact Card Section */}
+      <div className="w-full bg-blue-50 rounded-2xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-10">
+        
         {/* Left - Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
