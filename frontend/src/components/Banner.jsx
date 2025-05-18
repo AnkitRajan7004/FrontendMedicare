@@ -48,23 +48,6 @@ const Banner = () => {
           alt="Doctor appointment illustration"
         />
       </div>
-
-      {/* Animation styles */}
-      <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 1s ease forwards;
-        }
-      `}</style>
     </div>
   )
 }
